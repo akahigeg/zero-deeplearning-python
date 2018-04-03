@@ -8,3 +8,4 @@ services:
       TZ: "Asia/Tokyo"
     volumes:
       - .:/usr/src/app
+      - ./site-packages:/usr/local/lib/python3.6/site-packages
