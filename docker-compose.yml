@@ -1,0 +1,10 @@
+version: '3'
+services:
+  py:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TZ: "Asia/Tokyo"
+    volumes:
+      - .:/usr/src/app
