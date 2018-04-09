@@ -1,7 +1,7 @@
 FROM python:3.6
 WORKDIR /usr/src/app
 
-MKDIR ~/.config/matplotlib
+RUN mkdir -p ~/.config/matplotlib
 COPY config/matplotlibrc /etc/matplotlibrc
 COPY config/matplotlibrc ~/.config/matplotlib/matplotlibrc
 
